@@ -1,5 +1,6 @@
 jsonalize
 ===
+> https://deno.land/x/jsonalize@0.0.1
 
 ```sh
 # Installation
