@@ -1,4 +1,4 @@
-import { assertEquals } from 'https://deno.land/std@0.105.0/testing/asserts.ts'
+import { assertEquals } from '@std/assert'
 import { string2json } from './string2json.ts'
 
 Deno.test('string2json', () => {

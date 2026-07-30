@@ -1,22 +1,18 @@
 {
   "tasks": {
     "dev": "deno test --watch",
-    "build": "deno run -A build.ts",
-    "link": "(cd npm && npm link)",
-    "publish:dry": "deno run -A publish.ts dry",
-    "publish:run": "deno run -A publish.ts run"
-  },
-  "test": {
-    "exclude": ["npm/"]
-  },
-  "lint": {
-    "exclude": ["npm/"]
+    "check": "deno fmt --check && deno lint && deno check main.ts scripts/release.ts",
+    "test": "deno test",
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "compile": "deno compile --output jsonalize main.ts"
   },
   "fmt": {
-    "exclude": ["npm/", "README.md"],
-    "options": {
-      "singleQuote": true,
-      "semiColons": false
-    }
+    "exclude": ["README.md"],
+    "singleQuote": true,
+    "semiColons": false
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1"
   }
 }
