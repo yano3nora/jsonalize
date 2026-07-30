@@ -8,7 +8,7 @@
     "compile": "deno compile --output jsonalize main.ts"
   },
   "fmt": {
-    "exclude": ["README.md"],
+    "exclude": ["README.md", "dist/"],
     "singleQuote": true,
     "semiColons": false
   },
